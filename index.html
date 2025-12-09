@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharathi Properties</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="Bharathi Properties Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="">Properties ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Buy</a></li>
+                            <li><a href="">Rent</a></li>
+                            <li><a href="">Commercial</a></li>
+                            <li><a href="">Plots / Land</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Sell Property</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="" class="cta-btn">Enquire Now</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Find Your Perfect Property With Bharathi Properties</h2>
+                <p>Your trusted partner for buying, selling, and renting with transparency and expert support.</p>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search by location">
+                    <select>
+                        <option value="">Buy</option>
+                        <option value="">Rent</option>
+                        <option value="">Commercial</option>
+                        <option value="">Plots/Land</option>
+                    </select>
+                    <input type="text" placeholder="Price Range ">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="categories container">
+        <h2 class="section-title">Apartment, Villas and More </h2>
+
+        <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+        <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+
+        <div class="category-scroll" id="categoryScroll">
+
+               <a href="#" class="category-card bg-1">
+                <h3>Buy Properties</h3>
+                <p class="count">12,000+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/residential_properties.webp" alt="Residential Properties">
+                </div>
+            </a>
+
+            <a href="#" class= "category-card bg-2">
+                <h3>Residential Land</h3>
+                <p class="count">660+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/residential_land.webp" alt="Rent Properties">
+                </div>
+            </a>
+
+            <a href="#" class="category-card bg-3">
+            <h3>Independent House / Villa</h3>
+            <p class="count">520+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/independent_house.webp" alt="Rent Properties">
+                </div>        
+            </a>
+
+            <a href="#" class="category-card bg-4">
+            <h3>Independent/Builder Floor</h3>
+            <p class="count">800+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/builder_floor.webp" alt="Rent Properties">
+                </div>        
+            </a>
+
+            <a href="#" class="category-card bg-5">
+            <h3>1RK/ Studio Apartment</h3>
+            <p class="count">80+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/1RK_Apartment.webp" alt="Rent Properties">
+                </div>        
+            </a>
+
+            <a href="#" class="category-card bg-6">
+            <h3>Serviced Apartment</h3>
+            <p class="count">10 Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/serviced_apartments.webp" alt="Rent Properties">
+                </div>        
+            </a>
+
+             <a href="#" class="category-card bg-7">
+            <h3>Commercial Spaces</h3>
+            <p class="count">20+ Properties</p>
+                <div class="cat-img">
+                    <img src="./images/category/commercial.jpg" alt="Rent Properties">
+                </div>        
+            </a>
+        </div>
+    </section>
+
+
+     <section class="featured">
+        <h2 class="section-title">Featured Properties</h2>
+
+          <div class="slider-container">
+
+        <button class="prev-btn">&#10094;</button>
+
+        <div class="slider-wrapper">
+            <div class="slider"> 
+
+             <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/Supreme_Pallacio.jpeg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">Supreme Pallacio</h3>
+                    <p class="property-location">Baner, Pune</p>
+                    <p class="property-price">₹ 4.85 Cr</p>
+
+                    <div class="property-meta">
+                        <span>4BHK</span>
+                        <span>3000 sq.ft</span>
+                        <span>4 BHK Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/Rohan_Saroha.jpg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">Rohan Saroha</h3>
+                    <p class="property-location">Bavdhan, Pune</p>
+                    <p class="property-price">₹ 2.1 Cr</p>
+
+                    <div class="property-meta">
+                        <span>4BHK</span>
+                        <span>2025 sq.ft</span>
+                        <span>4 BHK Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/Nyati_Emerald.jpeg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">Nyati Emerald</h3>
+                    <p class="property-location">Baner, Pune</p>
+                    <p class="property-price">₹ 1.7 Cr</p>
+
+                    <div class="property-meta">
+                        <span>3BHK</span>
+                        <span>1450 sq.ft</span>
+                        <span>3 BHK Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+            
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/VTP_Belair.jpeg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">VTP Belair</h3>
+                    <p class="property-location">Mahalunge, Pune</p>
+                    <p class="property-price">₹ 68 Lac</p>
+
+                    <div class="property-meta">
+                        <span> 2 BHK </span>
+                        <span>640 sq.ft</span>
+                        <span>Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+
+             <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/Blue_Ridge.jpeg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">Paranjape Blue Ridge</h3>
+                    <p class="property-location">Hinjewadi, Pune</p>
+                    <p class="property-price">₹ 2.29 Cr</p>
+
+                    <div class="property-meta">
+                        <span> 3 BHK </span>
+                        <span>1183 sq.ft</span>
+                        <span>3 BHK Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/palm_drive.jpeg" alt="">
+                </div>
+                <div class="property-info">
+                    <h3 class="property-title">Palm Drive</h3>
+                    <p class="property-location">Kharadi, Pune</p>
+                    <p class="property-price">₹ 87.49 Lac</p>
+
+                    <div class="property-meta">
+                        <span> 2 BHK</span>
+                        <span>809 sq.ft</span>
+                        <span>2 BHK Apartment</span>
+                    </div>
+                </div>
+                
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/lodha_belmondo.jpeg" alt="">
+                </div>
+                 <div class="property-info">
+                    <h3 class="property-title">Lodha Belmondo</h3>
+                    <p class="property-location">Gahunje, Pune</p>
+                    <p class="property-price">₹ 1.5 Cr</p>
+
+                    <div class="property-meta">
+                        <span> 2 BHK</span>
+                        <span>999 sq.ft</span>
+                        <span>2 BHK Apartment</span>
+                    </div>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+             <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/sai_heritage.jpeg" alt="">
+                </div>
+                 <div class="property-info">
+                    <h3 class="property-title">Sai Heritage</h3>
+                    <p class="property-location">Aundh, Pune</p>
+                    <p class="property-price">₹75 Lac</p>
+
+                    <div class="property-meta">
+                        <span> 1 BHK</span>
+                        <span>732 sq.ft</span>
+                        <span>1 BHK Apartment</span>
+                    </div>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+             <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/bramha_townhouse.avif" alt="">
+                </div>
+                 <div class="property-info">
+                    <h3 class="property-title">Brahmacorp Townhouse</h3>
+                    <p class="property-location">Balewadi, Pune</p>
+                    <p class="property-price">₹55Lac</p>
+
+                    <div class="property-meta">
+                        <span>1 BHK</span>
+                        <span>475 sq.ft</span>
+                        <span>1 RK Studio</span>
+                    </div>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+
+            <div class="property-card">
+                <div class="prop-img">
+                    <img src="./images/featured-properties/AG_Landmark.jpeg" alt="">
+                </div>
+                 <div class="property-info">
+                    <h3 class="property-title">AG Landmark</h3>
+                    <p class="property-location">Wakad, Pune</p>
+                    <p class="property-price">₹32 Lac</p>
+
+                    <div class="property-meta">
+                        <span>1 BHK</span>
+                        <span>475 sq.ft</span>
+                        <span>1 RK Studio</span>
+                    </div>
+                </div>
+                <button class="details-btn">View Details</button>
+            </div>
+
+               </div>
+        </div>
+
+        <button class="next-btn">&#10095;</button>
+    </div>
+    </section>
+
+    <section class="city-section">
+    <h4 class="section-subtitle">POPULAR AREAS</h4>
+    <h2 class="section-title">Explore Real Estate in Popular Pune Areas</h2>
+
+    <div class="area-slider-wrapper">
+        <div class="area-slider">
+
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/baner.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Baner</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/kothrud.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Kothrud</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/hinjewadi.jpeg" alt="Hadapsar">
+            <div class="area-info">
+                <h3>Hinjewadi</h3>
+                <p>15,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/viman-nagar.jpeg" alt="Viman Nagar">
+            <div class="area-info">
+                <h3>Viman Nagar</h3>
+                <p>8,700+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/kharadi.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Kharadi</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/aundh.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Aundh</h3>
+                <p>9,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/wakad.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Wakad</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/balewadi.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Balewadi</h3>
+                <p>10,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/koregaon-park.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Koregaon Park</h3>
+                <p>5,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/kalyani-nagar.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Kalyani Nagar</h3>
+                <p>7,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/magarpatta.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Magarpatta</h3>
+                <p>5,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/hadapsar.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Hadapsar</h3>
+                <p>10,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/pashan.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Pashan</h3>
+                <p>5,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/bavdhan.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Bavdhan</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/kothrud.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Kothrud</h3>
+                <p>12,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/wagholi.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Wagholi</h3>
+                <p>10,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class=" horizontal-card">
+            <img src="images/pune_areas/shivaji-nagar.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Shivaji Nagar</h3>
+                <p>9,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/pimpri.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Pimpri</h3>
+                <p>7,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/chinchwad.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Chinchwad</h3>
+                <p>10,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/akurdi.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Akurdi</h3>
+                <p>5,000+ Properties</p>
+            </div>
+        </div>
+
+        <div class="horizontal-card">
+            <img src="images/pune_areas/ravet.jpeg" alt="Kothrud">
+            <div class="area-info">
+                <h3>Ravet</h3>
+                <p>11,000+ Properties</p>
+            </div>
+        </div>
+        </div>
+     <button class="slide-btn" onclick="scrollSlider()">&#8250;</button>
+
+    </div>
+    </section>
+
+
+
+    <section class="why-us container premium">
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="why-grid">
+        <div class="why-card">
+            <i class="fas fa-file-shield icon"></i>
+            <h3>Verified Documents</h3>
+            <p>All property documents are thoroughly verified.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-hand-holding-dollar icon"></i>
+            <h3>Transparent Pricing</h3>
+            <p>No hidden fees, only fair market pricing.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-user-tie icon"></i>
+            <h3>Expert Guidance</h3>
+            <p>Professional real estate assistance whenever you need.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-file-signature icon"></i>
+            <h3>Hassle-Free Process</h3>
+            <p>We manage everything from site visits to paperwork.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="gallery container">
+    <h2 class="gallery-title">— GALLERY</h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="images/featured-properties/Supreme_Pallacio.jpeg" alt="">
+            <div class="gallery-text">Supreme Pallacio</div>
+        </div>
+
+        <div class="gallery-card wide">
+            <img src="images/featured-properties/Rohan_Saroha.jpg" alt="">
+            <div class="gallery-text">Rohan Saroha</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/featured-properties/Nyati_Emerald.jpeg" alt="">
+            <div class="gallery-text">Nyati Emerald</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/featured-properties/palm_drive.jpeg" alt="">
+            <div class="gallery-text">Palm Drive</div>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/featured-properties/lodha_belmondo.jpeg" alt="">
+            <div class="gallery-text">Lodha Belmondo</div>
+        </div>
+
+        <div class="gallery-card wide">
+            <img src="images/featured-properties/VTP_Belair.jpeg" alt="">
+            <div class="gallery-text">VTP Belair</div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section class="testimonials container">
+    <h2 class="section-title">What Our Clients Say</h2>
+
+    <div class="testimonial-slider">
+        <div class="slider-track">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">
+                <p class="message">“Bharathi Properties helped me find the perfect home. The process was smooth, transparent, and stress-free.”</p>
+                <h3 class="name">— Ramesh Patil</h3>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">
+                <p class="message">“Their guidance and support throughout the purchase were exceptional. Highly trustworthy agency.”</p>
+                <h3 class="name">— Sneha Joshi</h3>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                 <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">   
+                <p class="message">“Professional, reliable, and very helpful. I got the best deal for my commercial property.”</p>
+                <h3 class="name">— Karthik Sharma</h3>
+            </div>
+
+            <!-- Duplicate for infinite loop -->
+            <div class="testimonial-card">
+                <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">    
+                <p class="message">“Bharathi Properties helped me find the perfect home. The process was smooth, transparent, and stress-free.”</p>
+                <h3 class="name">— Ramesh Patil</h3>
+            </div>
+
+            <div class="testimonial-card">
+                <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">
+                <p class="message">“Their guidance and support throughout the purchase were exceptional. Highly trustworthy agency.”</p>
+                <h3 class="name">— Sneha Joshi</h3>
+            </div>
+
+            <div class="testimonial-card">
+                <img class="client-photo" src="images/ramesh.jpg" alt="Ramesh Patil">
+                <p class="message">“Professional, reliable, and very helpful. I got the best deal for my commercial property.”</p>
+                <h3 class="name">— Karthik Sharma</h3>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+     <footer>
+        <div class="container footer-content">
+
+            <div>
+                <h2 class="logo">Bharati <span>Properties</span></h2>
+                <p>Your trusted partner for all real estate needs.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Pune, Maharashtra</p>
+                <p>Email: contact@bharatiproperties.com</p>
+                <p>Phone: +91 XXXXXXXXXX</p>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">© 2025 Bharati Properties. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
