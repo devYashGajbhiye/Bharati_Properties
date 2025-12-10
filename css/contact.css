@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #F5F7FA;
+    color: #1A1A1A;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;        
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #0A2A43;
+}
+
+.cta-btn {
+    background: #D4A017;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    z-index: 50;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-menu{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 8px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition:  0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background: #F0F0F0;
+    color: #c62828;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e2a5a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-form, .contact-info {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h3,
+        .contact-info h3 {
+            margin-top: 0;
+            color: #1e2a5a;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-weight: 500;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #1e2a5a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #162047;
+        }
+
+        .info-section {
+            margin-bottom: 20px;
+        }
+
+        .info-section p {
+            line-height: 1.6;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #1e2a5a;
+            font-size: 22px;
+            margin-right: 15px;
+        }
+
+        /* Google Map Styling */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #25d366;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+footer {
+    background: #0A2A43;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
