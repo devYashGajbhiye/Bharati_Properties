@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharathi Properties</title>
+    <link rel="stylesheet" href="./css/properties.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="Bharathi Properties Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="./property-list.html">Properties ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Buy</a></li>
+                            <li><a href="">Rent</a></li>
+                            <li><a href="">Commercial</a></li>
+                            <li><a href="">Plots / Land</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./sell-property.html">Sell Property</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="" class="cta-btn">Enquire Now</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+        <h2>Filters</h2>
+
+        <label>Price Range</label>
+        <input type="range" min="1000000" max="50000000">
+
+        <label>BHK</label>
+        <select>
+            <option>1 BHK</option>
+            <option>2 BHK</option>
+            <option>3 BHK</option>
+            <option>4+ BHK</option>
+        </select>
+
+        <label>Location</label>
+        <select>
+            <option>Hinjewadi</option>
+            <option>Baner</option>
+            <option>Kothrud</option>
+        </select>
+
+        <label>Property Type</label>
+        <select>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Plot</option>
+        </select>
+    </aside>
+
+    <!-- Property Grid -->
+    <section class="property-grid">
+
+        <div class="property-card">
+            <img src="./images/residential/Nyati_Emerald.jpeg" alt="">
+            <h3>2 BHK Flat</h3>
+            <p>Baner, Pune</p>
+            <span class="price">₹ 75 Lac</span>
+            <a href="property-details.html" class="btn">View Details</a>
+        </div>
+
+        <div class="property-card">
+            <img src="./images/residential/Supreme_Pallacio.jpeg" alt="">
+            <h3>3 BHK Apartment</h3>
+            <p>Hinjewadi, Pune</p>
+            <span class="price">₹ 92 Lac</span>
+            <a href="property-details.html" class="btn">View Details</a>
+        </div>
+
+        <div class="property-card">
+            <img src="./images/residential/Rohan_Seher.jpeg" alt="">
+            <h3>Villa</h3>
+            <p>Kothrud, Pune</p>
+            <span class="price">₹ 1.5 Cr</span>
+            <a href="property-details.html" class="btn">View Details</a>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <a href="#">Prev</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">Next</a>
+</div>
+
+    <footer>
+        <div class="container footer-content">
+
+            <div>
+                <h2 class="logo">Bharati <span>Properties</span></h2>
+                <p>Your trusted partner for all real estate needs.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Pune, Maharashtra</p>
+                <p>Email: contact@bharatiproperties.com</p>
+                <p>Phone: +91 XXXXXXXXXX</p>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">© 2025 Bharati Properties. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
