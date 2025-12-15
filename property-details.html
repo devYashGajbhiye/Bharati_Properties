@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Bharathi Properties</title>
-    <link rel="stylesheet" href="./css/properties-list.css">
+    <link rel="stylesheet" href="./css/properties-details.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,17 +40,51 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container property-details">
 
     <h1>2 BHK Premium Apartment</h1>
     <p class="location">📍 Baner, Pune</p>
 
-    <!-- Image Gallery -->
-    <div class="gallery">
-        <img src="img1.jpg" alt="">
-        <img src="img2.jpg" alt="">
-        <img src="img3.jpg" alt="">
+    <div class="property-gallery" id="openGallery">
+
+    <!-- Left big image -->
+    <div class="gallery-main">
+        <img src="./images/property-details/nyati_emerald.jpg" alt="Property Main Image">
+        <div class="overlay">All Photos & Videos</div>
+        <span class="count-badge">📷 33</span>
     </div>
+
+    <div class="gallery-side">
+        <div class="side-img">
+            <img src="./images//property-details/living_room_emerald.jpg" alt="">
+            <div class="video-badge">Living Room</div>
+        </div>
+
+        <div class="side-img">
+            <img src="./images/property-details/dining_room_emerald.jpg" alt="Outdoors">
+            <span class="count-badge small">📷 5</span>
+            <div class="label">Dining Room</div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="lightbox" id="galleryModal">
+    <span class="close">&times;</span>
+
+    <div class="lightbox-grid">
+        <img src="./images/property-details/entrance_emerald.jpg">
+        <img src="./images/property-details/garden_emerald.jpg">
+        <img src="./images/property-details/basketball_court.jpg">
+        <img src="./images/property-details/badminton_emerald.jpg">
+        <img src="./images/property-details/swimming_emerald.jpg">
+        <img src="./images/property-details/gym_emerald.jpg">
+        <img src="./images/property-details/indoor_emerald.jpg">
+        <img src="./images/property-details/bedroom_emerald.jpg">
+    </div>
+    </div>
+
+
 
     <!-- Highlights -->
     <div class="highlights">
@@ -94,12 +128,27 @@
 
     </div>
 
-    <footer>
+     <footer>
         <div class="container footer-content">
 
             <div>
                 <h2 class="logo">Bharati <span>Properties</span></h2>
-                <p>Your trusted partner for all real estate needs.</p>
+                <p>Your trusted partner for all real estate needs.<br>
+                Connecting clients with the right property,<br>
+                built on pillars of Security, Trust, and Expertise.<br>
+               </p>
+
+               <div class="social-icons">
+                   <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
 
             <div>
@@ -114,15 +163,16 @@
 
             <div>
                 <h3>Contact</h3>
-                <p>Pune, Maharashtra</p>
+                <p>Baner, Maharashtra</p>
                 <p>Email: contact@bharatiproperties.com</p>
                 <p>Phone: +91 XXXXXXXXXX</p>
             </div>
 
         </div>
 
-        <p class="footer-bottom">© 2025 Bharati Properties. All Rights Reserved.</p>
+        <p class="footer-bottom">© 2025 Maxxzoom India Pvt. Ltd. All Rights Reserved.</p>
     </footer>
     
+    <script src="./js/property-details.js"></script>
 </body>
 </html>

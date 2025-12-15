@@ -22,7 +22,7 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Us</a></li>
                     <li class="dropdown">
-                        <a href="">Properties ▾</a>
+                        <a href="./property-list.html">Properties ▾</a>
                         <ul class="dropdown-menu">
                             <li><a href="">Buy</a></li>
                             <li><a href="">Rent</a></li>
@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                     <li><a href="./services.html">Services</a></li>
-                    <li><a href="">Sell Property</a></li>
+                    <li><a href="./sell-property.html">Sell Property</a></li>
                     <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -47,15 +47,16 @@
                 <p>Your trusted partner for buying, selling, and renting with transparency and expert support.</p>
 
                 <div class="search-box">
-                    <input type="text" placeholder="Search by location">
-                    <select>
-                        <option value="">Buy</option>
-                        <option value="">Rent</option>
-                        <option value="">Commercial</option>
-                        <option value="">Plots/Land</option>
+                    <input type="text" id="searchLocation" placeholder="Search by location">
+                    <select id="searchType">
+                        <option value="">All Types</option>
+                        <option value="buy">Buy</option>
+                        <option value="rent">Rent</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="plot">Plots/Land</option>
                     </select>
-                    <input type="text" placeholder="Price Range ">
-                    <button>Search</button>
+                    <input type="number" id="searchPrice" placeholder="Max Price (₹)">
+                    <button id="searchBtn">Search</button>
                 </div>
             </div>
         </div>
@@ -140,7 +141,10 @@
         <div class="slider-wrapper">
             <div class="slider"> 
 
-             <div class="property-card">
+             <div class="property-card" 
+                data-location="baner"
+                data-type="buy"
+                data-price="48500000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/Supreme_Pallacio.jpeg" alt="">
                 </div>
@@ -159,7 +163,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-            <div class="property-card">
+            <div class="property-card"
+                data-location="bavdhan"
+                data-type="buy"
+                data-price="21000000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/Rohan_Saroha.jpg" alt="">
                 </div>
@@ -178,7 +185,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-            <div class="property-card">
+            <div class="property-card" 
+                data-location="baner"
+                data-type="buy"
+                data-price="17000000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/Nyati_Emerald.jpeg" alt="">
                 </div>
@@ -197,7 +207,10 @@
                 <button class="details-btn">View Details</button>
             </div>
             
-            <div class="property-card">
+            <div class="property-card"
+                data-location="mahalunge"
+                data-type="buy"
+                data-price="6800000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/VTP_Belair.jpeg" alt="">
                 </div>
@@ -216,7 +229,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-             <div class="property-card">
+             <div class="property-card"
+                data-location="hinjewadi"
+                data-type="buy"
+                data-price="22900000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/Blue_Ridge.jpeg" alt="">
                 </div>
@@ -235,7 +251,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-            <div class="property-card">
+            <div class="property-card"
+                data-location="kharadi"
+                data-type="buy"
+                data-price="8749000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/palm_drive.jpeg" alt="">
                 </div>
@@ -254,7 +273,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-            <div class="property-card">
+            <div class="property-card"
+                data-location="baner"
+                data-type="buy"
+                data-price="15000000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/lodha_belmondo.jpeg" alt="">
                 </div>
@@ -272,7 +294,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-             <div class="property-card">
+             <div class="property-card"
+                data-location="hinjewadi"
+                data-type="buy"
+                data-price="7500000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/sai_heritage.jpeg" alt="">
                 </div>
@@ -290,7 +315,10 @@
                 <button class="details-btn">View Details</button>
             </div>
 
-             <div class="property-card">
+             <div class="property-card"
+                data-location="baner"
+                data-type="buy"
+                data-price="5500000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/bramha_townhouse.avif" alt="">
                 </div>
@@ -309,7 +337,10 @@
             </div>
 
 
-            <div class="property-card">
+            <div class="property-card"
+                data-location="hinjewadi"
+                data-type="buy"
+                data-price="3200000">
                 <div class="prop-img">
                     <img src="./images/featured-properties/AG_Landmark.jpeg" alt="">
                 </div>
@@ -649,7 +680,7 @@
 
             <div class="info-box">
                 <i class="fas fa-map-marker-alt"></i>
-                <p><strong>Office Address:</strong><br>Pune, Maharashtra, India</p>
+                <p><strong>Office Address:</strong><br>Banner, Maharashtra, India</p>
             </div>
 
             <div class="info-box">
@@ -698,7 +729,22 @@
 
             <div>
                 <h2 class="logo">Bharati <span>Properties</span></h2>
-                <p>Your trusted partner for all real estate needs.</p>
+                <p>Your trusted partner for all real estate needs.<br>
+                Connecting clients with the right property,<br>
+                built on pillars of Security, Trust, and Expertise.<br>
+               </p>
+
+               <div class="social-icons">
+                   <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
 
             <div>
@@ -713,14 +759,14 @@
 
             <div>
                 <h3>Contact</h3>
-                <p>Pune, Maharashtra</p>
+                <p>Baner, Maharashtra</p>
                 <p>Email: contact@bharatiproperties.com</p>
                 <p>Phone: +91 XXXXXXXXXX</p>
             </div>
 
         </div>
 
-        <p class="footer-bottom">© 2025 Bharati Properties. All Rights Reserved.</p>
+        <p class="footer-bottom">© 2025 Maxxzoom India Pvt. Ltd. All Rights Reserved.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
