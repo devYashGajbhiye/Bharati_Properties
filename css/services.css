@@ -321,6 +321,19 @@ footer a {
     text-decoration: none;
 }
 
+
+footer p{
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    margin-top: 10px;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;

@@ -54,35 +54,42 @@
         <h2>Filters</h2>
 
         <label>Price Range</label>
-        <input type="range" min="1000000" max="50000000">
+        <input type="range" id="priceFilter" min="1000000" max="50000000" step="500000">
 
         <label>BHK</label>
-        <select>
-            <option>1 BHK</option>
-            <option>2 BHK</option>
-            <option>3 BHK</option>
-            <option>4+ BHK</option>
+        <select id="bhkFilter">
+            <option value="">Any</option>
+            <option value="1">1 BHK</option>
+            <option value="2">2 BHK</option>
+            <option value="3">3 BHK</option>
+            <option value="4">4+ BHK</option>
         </select>
 
         <label>Location</label>
-        <select>
-            <option>Hinjewadi</option>
-            <option>Baner</option>
-            <option>Kothrud</option>
+        <select id="locationFilter">
+            <option value="">Any</option>
+            <option value="Hinjewadi">Hinjewadi</option>
+            <option value="Baner">Baner</option>
+            <option value="Kothrud">Kothrud</option>
         </select>
 
         <label>Property Type</label>
-        <select>
-            <option>Apartment</option>
-            <option>Villa</option>
-            <option>Plot</option>
+        <select id="typeFilter">
+            <option value="">Any</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Villa">Villa</option>
+            <option value="Plot">Plot</option>
         </select>
     </aside>
 
     <!-- Property Grid -->
     <section class="property-grid">
 
-        <div class="property-card">
+        <div class="property-card"
+            data-price="7500000"
+            data-bhk="2"
+            data-location="Baner"
+            data-type="Apartment">
             <img src="./images/residential/Nyati_Emerald.jpeg" alt="">
             <h3>2 BHK Flat</h3>
             <p>Baner, Pune</p>
@@ -90,21 +97,31 @@
             <a href="property-details.html?id=nyati-emerald" class="btn">View Details</a>
         </div>
 
-        <div class="property-card">
+         <div class="property-card"
+            data-price="9200000"
+            data-bhk="3"
+            data-location="Hinjewadi"
+            data-type="Apartment">
             <img src="./images/residential/Supreme_Pallacio.jpeg" alt="">
             <h3>3 BHK Apartment</h3>
             <p>Hinjewadi, Pune</p>
             <span class="price">₹ 92 Lac</span>
-            <a href="property-details.html?id=nyati-emerald" class="btn">View Details</a>
+            <a href="property-details.html" class="btn">View Details</a>
         </div>
 
-        <div class="property-card">
+        <div class="property-card"
+            data-price="15000000"
+            data-bhk="4"
+            data-location="Kothrud"
+            data-type="Villa">
             <img src="./images/residential/Rohan_Seher.jpeg" alt="">
             <h3>Villa</h3>
             <p>Kothrud, Pune</p>
             <span class="price">₹ 1.5 Cr</span>
-            <a href="property-details.html?id=nyati-emerald" class="btn">View Details</a>
+            <a href="property-details.html" class="btn">View Details</a>
         </div>
+
+       
 
     </section>
 
@@ -144,11 +161,11 @@
 
             <div>
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Commercial</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">Buy</a></li>
+                    <li class="footer-link"><a href="#">Rent</a></li>
+                    <li class="footer-link"><a href="#">Commercial</a></li>
+                    <li class="footer-link"><a href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -163,5 +180,43 @@
 
         <p class="footer-bottom">© 2025 Maxxzoom India Pvt. Ltd. All Rights Reserved.</p>
     </footer>
+    <script>
+const priceFilter = document.getElementById("priceFilter");
+const bhkFilter = document.getElementById("bhkFilter");
+const locationFilter = document.getElementById("locationFilter");
+const typeFilter = document.getElementById("typeFilter");
+
+const properties = document.querySelectorAll(".property-card");
+
+function applyFilters() {
+    const maxPrice = parseInt(priceFilter.value);
+    const bhk = bhkFilter.value;
+    const location = locationFilter.value;
+    const type = typeFilter.value;
+
+    properties.forEach(card => {
+        const price = parseInt(card.dataset.price);
+        const cardBhk = card.dataset.bhk;
+        const cardLocation = card.dataset.location;
+        const cardType = card.dataset.type;
+
+        let visible = true;
+
+        if (price > maxPrice) visible = false;
+        if (bhk && cardBhk !== bhk && !(bhk === "4" && cardBhk >= 4)) visible = false;
+        if (location && cardLocation !== location) visible = false;
+        if (type && cardType !== type) visible = false;
+
+        card.style.display = visible ? "block" : "none";
+    });
+}
+
+// Trigger filter on change
+priceFilter.addEventListener("input", applyFilters);
+bhkFilter.addEventListener("change", applyFilters);
+locationFilter.addEventListener("change", applyFilters);
+typeFilter.addEventListener("change", applyFilters);
+</script>
+
 </body>
 </html>

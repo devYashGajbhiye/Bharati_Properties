@@ -34,41 +34,42 @@ function scrollSlider() {
 }   
 
 
-document.getElementById("searchBtn").addEventListener("click", function () {
-    const locationInput = document.getElementById("searchLocation").value.toLowerCase();
-    const typeInput = document.getElementById("searchType").value.toLowerCase();
-    const priceInput = document.getElementById("searchPrice").value;
+document.addEventListener("DOMContentLoaded", () => {
 
-    slider.style.transform = "translateX(0px)";
-    translateX = 0;
+    const searchBtn = document.getElementById("searchBtn");
+    const searchLocation = document.getElementById("searchLocation");
+    const searchType = document.getElementById("searchType");
+    const searchPrice = document.getElementById("searchPrice");
 
-    const cards = document.querySelectorAll(".property-card");
+    const properties = document.querySelectorAll(".property-card");
 
-    cards.forEach(card => {
+    if (!searchBtn || properties.length === 0) return;
 
-         if (!card.dataset.location || !card.dataset.type || !card.dataset.price) {
-            card.style.display = "none";
-            return;
-        }
-        
-        const cardLocation = card.dataset.location.toLowerCase();
-        const cardType = card.dataset.type.toLowerCase();
-        const cardPrice = parseInt(card.dataset.price);
+    searchBtn.addEventListener("click", () => {
+        const locationValue = searchLocation.value.trim().toLowerCase();
+        const typeValue = searchType.value;
+        const maxPrice = parseInt(searchPrice.value);
 
-        let isVisible = true;
+        properties.forEach(card => {
+            const cardLocation = card.dataset.location.toLowerCase();
+            const cardType = card.dataset.type;
+            const cardPrice = parseInt(card.dataset.price);
 
-        if (locationInput && !cardLocation.includes(locationInput)) {
-            isVisible = false;
-        }
+            let visible = true;
 
-        if (typeInput && cardType !== typeInput) {
-            isVisible = false;
-        }
+            if (locationValue && !cardLocation.includes(locationValue)) {
+                visible = false;
+            }
 
-        if (priceInput && cardPrice > parseInt(priceInput)) {
-            isVisible = false;
-        }
+            if (typeValue && cardType !== typeValue) {
+                visible = false;
+            }
 
-        card.style.display = isVisible ? "block" : "none";
+            if (maxPrice && cardPrice > maxPrice) {
+                visible = false;
+            }
+
+            card.style.display = visible ? "block" : "none";
+        });
     });
 });

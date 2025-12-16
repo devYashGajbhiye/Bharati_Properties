@@ -45,7 +45,7 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-links li a {
@@ -186,6 +186,10 @@ header {
     object-fit: cover;
 }
 
+.property-card h3,p {
+    margin-top: 5px;
+}
+
 .property-card .price {
     font-weight: bold;
     display: block;
@@ -198,6 +202,7 @@ header {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 8px;
 }
 
 /* Pagination */
@@ -237,6 +242,19 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+
+footer p{
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    margin-top: 10px;
 }
 
 .footer-bottom {

@@ -709,7 +709,7 @@ header {
 .info-box {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 
 .info-box i {
@@ -793,6 +793,13 @@ footer p{
     margin-top: 10px;
 }
 
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    margin-top: 10px;
+}
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -826,6 +833,17 @@ footer p{
 .social-icons a:hover {
     background: #D4A017;
     color: #000;
+}
+
+.lazy-img {
+    filter: blur(10px);
+    transform: scale(1.02);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.lazy-img.loaded {
+    filter: blur(0);
+    transform: scale(1);
 }
 
 /* Mobile */
