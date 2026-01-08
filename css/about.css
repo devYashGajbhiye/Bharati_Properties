@@ -6,7 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background: #F5F7FA;
+    background: linear-gradient(120deg, #a9c6f5 0%, #b8dbeb 100%);
     color: #1A1A1A;
     overflow-x: hidden;
 }
@@ -145,7 +145,7 @@ header {
 .difference-section {
     width: 100%;
     padding: 60px 5%;
-    background: #ffffff;
+    background: linear-gradient(120deg, #a9c6f5 0%, #b8dbeb 100%);
 }
 
 .diff-title {
@@ -190,11 +190,11 @@ header {
     color: #555;
 }
 
-.difference-section {
+/* .difference-section {
     width: 100%;
     padding: 60px 5%;
     background: #ffffff;
-}
+} */
 
 .diff-title {
     font-size: 24px;
@@ -218,6 +218,12 @@ header {
     object-fit: cover;
 }
 
+.diff-image.right img {
+    width: 100%;
+    height: 250px;
+    border-radius: 16px;
+    object-fit: cover;
+}
 /* Stats Section */
 .diff-stats {
     display: flex;
@@ -242,7 +248,7 @@ header {
 .personal-experience-section {
     width: 100%;
     padding: 60px 5%;
-    background: #f8f9fb;
+    background: linear-gradient(120deg, #a9c6f5 0%, #b8dbeb 100%);
 }
 
 /* Layout Grid */
@@ -301,7 +307,7 @@ header {
 
 .principles-section {
     padding: 70px 5%;
-    background: #ffffff;
+    background: linear-gradient(120deg, #a9c6f5 0%, #b8dbeb 100%);
 }
 
 /* Header */

@@ -14,7 +14,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background: #F5F7FA;
+    background: linear-gradient(120deg, #a9c6f5 0%, #b8dbeb 100%);
     color: #1A1A1A;
     overflow-x: hidden;
 }
